@@ -1,0 +1,199 @@
+/* Global */
+*{
+    margin:0;
+    padding: 0;
+    background-color: #333;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:600;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+h1,h2{
+    text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.5); 
+}
+h3, h4{
+    font-style: italic;
+}
+.mb-10{
+    margin-bottom: 10px;
+}
+.smaller{
+    font-size: smaller;
+    font-weight: lighter;
+}
+/* Header Section */
+#header{
+    width:94%;
+    margin-left:3%;
+    margin-right:3%;
+    padding-top: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5), 0px 0px 40px rgba(0,0,0,0.3);
+    border-radius: 0px 0px 20px 20px;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.3);
+    background: slategrey;
+}
+#header *{
+    background: slategrey;
+}
+#header h3{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Main Area */
+#main{
+    width: 94%;
+    margin-left:3%;
+    margin-right:3%;
+    margin-top: 30px;
+    overflow: hidden;
+    padding: 15px;
+    border-radius: 20px 20px 0px 0px;
+    box-sizing: border-box;
+    box-shadow: 
+        10px 10px 20px rgba(0,0,0,0.5),
+        0px 0px 60px rgba(0,0,0,0.1);
+    background: slategrey;
+    transition: all 1s ease-in-out;
+}
+
+#main *{
+    background: rgba(0,0,0,0.0);
+}
+#about,
+#education,
+#experience,
+#skills{
+    padding-top: 30px;
+    width:90%;
+    margin-left:5%;
+    margin-right:5%;
+}
+#about p{
+    padding-left:5%;
+}
+
+#education ul,
+#experience ul,
+#skills ul{
+    list-style: none;
+    padding-left: 5%;
+}
+.year{
+    font-style: italic;
+    font-size: smaller;
+}
+.li-desc{
+    padding-left: 5%;
+    padding-bottom: 15px;;
+}
+.main-skills{
+    padding-left: 5%;
+}
+.main-skills li{
+    padding-bottom: 10px;
+}
+.main-skills li h3{
+    text-decoration: underline;
+}
+.skill-wrap{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.skill-item{
+    text-transform: capitalize;
+    text-align: left;
+}
+/* Cover page */
+#main-cover{
+    width: 94%;
+    margin-left:3%;
+    margin-right:3%;
+    margin-top: 30px;
+    padding: 80px 0px 80px 0px;
+    overflow: hidden;
+    border-radius: 20px 20px 20px 20px;
+    border: 1px solid rgba(0,0,0,0.3);
+    box-sizing: border-box;
+    box-shadow: 0px 20px 80px rgba(0,0,0,0.3), 0px 0px 50px rgba(0,0,0,0.1);
+    background-color: slategrey;
+}
+.cv-button{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.button-style{
+    position: absolute;
+    width:200px;
+    margin-top:30px;
+    margin-bottom:30px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    background-color: rgba(38, 0, 253, 0.5);
+    box-sizing: border-box;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.4), 0px 0px 10px rgba(0,0,0,0.3);
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid rgba(11, 128, 196, 0.5);
+    color: #fff;
+    font-size: 20px;
+    transition: all 1s ease-in-out;
+    text-decoration: none;
+}
+.button-style:hover{
+    transform:scale(1.2);
+    box-shadow: 30px 30px 5px rgba(0,0,0,0.1), 0px 0px 30px rgba(0,0,0,0.3);
+    border: 1px solid rgba(38, 0, 253, 0.5);
+    background-color: rgba(11, 128, 196, 0.5);
+}
+.cover-contain{
+    padding: 20px;
+    max-width: 1020px;
+    margin: 0 auto;
+    font-size: 18px;
+    background: slategrey;
+}
+.cover-contain p{
+    font-size: 18px;
+    font-weight: 600;
+    background:slategrey;
+}
+
+/* Media Queries */
+/* mobile */
+@media only screen and (min-width: 480px){
+    .skill-item{
+        flex: 0 0 50%;
+    }
+}
+
+/* smaller tablets */
+@media only screen and (min-width: 767px){
+    .skill-item{
+        flex: 0 0 33.33%;
+    }
+}
+
+/* tablets */
+@media only screen and (min-width: 1024px){
+    .skill-item{
+        flex: 0 0 25%;
+    }
+}
+
+/* desktop */
+@media only screen and (min-width: 1280px){
+    .skill-item{
+        flex: 0 0 25%;
+    }
+}
